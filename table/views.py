@@ -5,3 +5,4 @@ def home(request):
     title = "Restaurant table"
 
     return render(request,'home.html', {"title":title})
+    
