@@ -5,14 +5,11 @@
   <h1>Restaurant list</h1>
 
     {% for i in table %}
-    <p><strong>Name:</strong>{{i.fields.Name}} <br>
-      <strong>Amount:</strong>{{i.fields.Amount}}<br>
-    <strong>Location:</strong>{{i.fields.Branch}}</p>
    
-   
-       {%endfor%}
-    
-   
+    {{i.fields.Name}} spent Ksh.{{i.fields.Amount}} on {{i.fields.Timestamp}} {{i.fields.Branch}} {day}-{month}-{year}
+    <br>
+    {%endfor%}
+  
 </div>
 
 {% endblock %}
