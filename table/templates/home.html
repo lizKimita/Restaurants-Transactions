@@ -3,10 +3,14 @@
 
 <div class="container-fluid">
   <h1>Restaurant list</h1>
-    <p>{{restaurant_table.name}}</p>
-    <p>{{restaurant_table.amount}}</p>
-    <p>{{restaurant_table.timestamp}}</p>
-    <p>{{restaurant_table.branch}}</p>
+
+    {% for i in table %}
+    <p><strong>Name:</strong>{{i.fields.Name}} <br>
+      <strong>Amount:</strong>{{i.fields.Amount}}<br>
+    <strong>Location:</strong>{{i.fields.Branch}}</p>
+   
+   
+       {%endfor%}
     
    
 </div>
