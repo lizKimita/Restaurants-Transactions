@@ -9,12 +9,16 @@ def home(request):
     
     transactions = requests.get(url.format()).json()
    
-
     restaurant_table = {
-        "name":transactions['Name'],
+        "name":transactions['records'][0]['fields']['Name'],
+        "amount":transactions['records'][0]['fields']['Amount'],
+        "timestamp":transactions['records'][0]['fields']['Timestamp'],
+        "branch":transactions['records'][0]['fields']['Branch']
 
+
+       
     }
-    print(restaurant_table)
-
-    return render(request,'home.html', {"title":title})
+    table = {"restaurant_table":restaurant_table}
+    
+    return render(request,'home.html', table)
     
