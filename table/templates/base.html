@@ -15,10 +15,9 @@
     {% block styles %}
 
     <!-- Font Awesome -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Courgette|Kaushan+Script|Lobster|Lobster+Two|Merriweather|Pacifico|Playball&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cookie|Lobster|Lobster+Two|Pacifico|Playball|Satisfy"
-        rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
     <!-- Bootstrap core CSS -->
@@ -33,16 +32,15 @@
 
 <body>
 
-    
     {% block content %}
     
     {%endblock%}
     <br>
 
     {% block scripts %}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
     {% bootstrap_javascript %}
-    <script src="{% static 'js/jquery.bootstrap.modal.forms.js' %}"></script>
+   
     {% endblock %}
 
 

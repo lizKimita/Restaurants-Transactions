@@ -9,7 +9,6 @@ h1{
 }
 .badge {
     line-height: 5ex;
-    width: 100ex;
     background-color: cadetblue;
     text-align: left;
     padding: 5ex;
@@ -20,18 +19,8 @@ h1{
     background-image: url(https://image.freepik.com/free-vector/fast-food-illustrations_23-2147508525.jpg?1)
 }
 
-/* @media screen and (max-width: 640px){
-    .badge {
-      flex: 50%;
-      max-width: 50%;
-    }
-  
-  }
-  
-  @media screen and (max-width: 700px){
-    .badge {
-      flex: 100%;
-      max-width: 100%;
-  
-    }
-  } */
+.high {
+    color: rgb(114, 58, 38);
+
+}
+

@@ -1,6 +1,6 @@
 # Restaurants-Transactions
 
-#### This is an application that consumes an API from airtable to display restaurant transaction records, 24/05/2019
+#### This is an application that consumes an API from airtable to display restaurant transaction records, 22/07/2019
 
 #### By **Elizabeth Wanjiku Kimita**
 

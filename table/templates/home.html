@@ -7,7 +7,7 @@
     <div class="badge" >
       {% for i in table %}
       
-      {{i.fields.Name}} spent Ksh.{{i.fields.Amount}}  on {{i.fields.Timestamp}} {{i.fields.high}}
+      {{i.fields.Name}} spent Ksh.{{i.fields.Amount}}  on {{i.fields.Timestamp}} <span class="high">{{i.fields.high}} </span>
       <br>
      
       {%endfor%}
