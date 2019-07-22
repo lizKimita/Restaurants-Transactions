@@ -2,17 +2,20 @@
 {{ block.super }}
 
 <div class="container">
-  <h1>Restaurant list</h1>
-  <div class="badge" >
-    {% for i in table %}
+ <h1><i class="fas fa-utensils" style="color:black; font-size:70%; margin-right: 2%"></i>Restaurant list</h1>
+  <div class="bkground">
+    <div class="badge" >
+      {% for i in table %}
+       
+      
+      {{i.fields.Name}} spent Ksh.{{i.fields.Amount}}  on {{i.fields.Timestamp|date:"D, d M, Y"}}
+      <br>
+       
      
-    
-    {{i.fields.Name}} spent Ksh.{{i.fields.Amount}}  on {{i.fields.Timestamp|date:"D, d M, Y"}}
-    <br>
-     
-   
-    {%endfor%}
+      {%endfor%}
+    </div>
   </div>
+
     
     
 
