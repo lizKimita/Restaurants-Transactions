@@ -1,0 +1,19 @@
+.container{
+    text-align: center;
+
+}
+h1{
+    font-size: 500%;
+    font-family: 'Lobster Two', cursive;
+    color: coral;
+    text-decoration:underline;
+}
+.badge {
+    line-height: 5ex;
+    width: 100ex;
+    background-color: cadetblue;
+    text-align: left;
+    padding: 5ex;
+    font-size: 100%;
+
+}

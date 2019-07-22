@@ -1,14 +1,21 @@
 {% extends 'base.html' %} {% block content %}
 {{ block.super }}
 
-<div class="container-fluid">
+<div class="container">
   <h1>Restaurant list</h1>
-
+  <div class="badge" >
     {% for i in table %}
-   
-    {{i.fields.Name}} spent Ksh.{{i.fields.Amount}} on {{i.fields.Timestamp}} {{i.fields.Branch}} {day}-{month}-{year}
+     
+    
+    {{i.fields.Name}} spent Ksh.{{i.fields.Amount}}  on {{i.fields.Timestamp|date:"D, d M, Y"}}
     <br>
+     
+   
     {%endfor%}
+  </div>
+    
+    
+
   
 </div>
 
