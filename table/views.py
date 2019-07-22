@@ -12,29 +12,22 @@ def home(request):
 
     table = transactions["records"]
     date = [];
+
     for i in table:
         time =i["fields"]["Timestamp"]
         newtime = datetime.datetime.strptime(time,"%Y-%m-%dT%H:%M:%S.000Z").strftime('%d-%m-%Y')
         date.append(newtime)
-    print(time)
-   
+
+
     return render(request,'home.html',{'title':title, 'table':table, 'date':date})
-
-    # for i in table:
-    #     date = [];
-    #     time = i["fields"]["Timestamp"]
-    #     newtime = datetime.datetime.strptime(time,"%Y-%m-%dT%H:%M:%S.000Z").strftime('%d-%m-%Y')
-    #     date.append(newtime)
-
-    #     new = ",".join(date)
     
-    #     locations = []
-    #     branch = i["fields"]["Branch"]
-    #     for x in branch:
-    #         if x not in locations:
-    #             locations.append(branch)
 
-    #     print(branch)
-   
-    # return render(request,'home.html',{'title':title, 'table':table, 'date':date})
-    
+    # branch = i["fields"]["Branch"]
+    # amount = i["fields"]["Amount"]
+    # appended = "**Top in {branch}**"
+
+    # for n in range (len(branch)):
+    # if branch[n] == branch[n+1] and amount[n] > amount[n+1] or amount[n+1] > amount[n]:
+    #     print (branch)
+
+    # return render(request,'home.html')
