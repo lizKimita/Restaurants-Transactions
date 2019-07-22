@@ -6,10 +6,9 @@
   <div class="bkground">
     <div class="badge" >
       {% for i in table %}
-
-      {{i.fields.Name}} spent Ksh.{{i.fields.Amount}}  on {{i.fields.Timestamp}} from {{i.fields.Branch}} 
+      
+      {{i.fields.Name}} spent Ksh.{{i.fields.Amount}}  on {{i.fields.Timestamp}} {{i.fields.high}}
       <br>
-       
      
       {%endfor%}
     </div>

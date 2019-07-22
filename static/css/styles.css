@@ -1,7 +1,5 @@
 .container{
     text-align: center;
-    
-
 }
 h1{
     font-size: 500%;
@@ -15,9 +13,25 @@ h1{
     background-color: cadetblue;
     text-align: left;
     padding: 5ex;
-    font-size: 100%;
+    font-size: 110%;
     margin: 5%;
 }
 .bkground {
     background-image: url(https://image.freepik.com/free-vector/fast-food-illustrations_23-2147508525.jpg?1)
 }
+
+/* @media screen and (max-width: 640px){
+    .badge {
+      flex: 50%;
+      max-width: 50%;
+    }
+  
+  }
+  
+  @media screen and (max-width: 700px){
+    .badge {
+      flex: 100%;
+      max-width: 100%;
+  
+    }
+  } */
