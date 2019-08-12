@@ -1,12 +1,12 @@
 import requests
 from django.shortcuts import render
 import datetime
-
+from decouple import config
 
 # Create your views here.
 def home(request):
     title = "Restaurant table"
-    url = 'https://api.airtable.com/v0/apptf9xPJazK1Lso8/Transactions?api_key=keyBuxrgTLexTtnqU'
+    url = config('url')
     
     transactions = requests.get(url.format()).json()
 
